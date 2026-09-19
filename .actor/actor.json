@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "finra-brokercheck-lookup",
+    "title": "FINRA BrokerCheck Lookup — Broker & Firm Registration",
+    "description": "Look up FINRA-registered brokers and investment firms by name: registration status, disciplinary disclosure flag, and employment/branch history, straight from FINRA BrokerCheck.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}

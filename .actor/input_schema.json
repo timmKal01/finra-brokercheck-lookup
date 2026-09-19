@@ -1,0 +1,49 @@
+{
+    "title": "FINRA BrokerCheck Lookup Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "query": {
+            "title": "Name to search (for a single lookup)",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Individual or firm name to look up. Leave the Queries (multiple) field below empty to use this single-lookup shortcut instead.",
+            "prefill": "John Smith"
+        },
+        "searchType": {
+            "title": "Search type (for a single lookup)",
+            "type": "string",
+            "editor": "select",
+            "enum": ["individual", "firm"],
+            "enumTitles": ["Individual broker/advisor", "Firm"],
+            "default": "individual",
+            "description": "Only used together with the Name field above."
+        },
+        "state": {
+            "title": "State filter (optional, individual search only)",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Two-letter state code to narrow results, e.g. \"NY\". Only used together with the Name field above."
+        },
+        "queries": {
+            "title": "Queries (multiple)",
+            "type": "array",
+            "editor": "json",
+            "description": "For looking up several names in one run instead of one at a time. One entry per query: { \"query\": \"name\", \"searchType\": \"individual\"|\"firm\", \"state\": \"NY\" }. Ignored if Name above is filled in.",
+            "prefill": [
+                { "query": "John Smith", "searchType": "individual" },
+                { "query": "Vanguard", "searchType": "firm" }
+            ]
+        },
+        "maxResults": {
+            "title": "Max results per query",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of matches to return per name searched.",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 50
+        }
+    },
+    "required": []
+}

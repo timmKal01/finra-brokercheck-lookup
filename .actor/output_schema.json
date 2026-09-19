@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of FINRA BrokerCheck Lookup",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Broker/firm records",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "finra-brokercheck-lookup",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Look up FINRA-registered brokers and investment firms by name: registration status, disciplinary disclosure flag, and employment history via FINRA BrokerCheck.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6"
+    },
+    "scripts": {
+        "start": "node src/main.js"
+    }
+}
