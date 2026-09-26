@@ -1,0 +1,73 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "query",
+                    "type",
+                    "crdNumber",
+                    "name",
+                    "brokerDealerStatus",
+                    "investmentAdviserStatus",
+                    "hasDisclosures",
+                    "branchCount",
+                    "city",
+                    "state",
+                    "profileUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "query": {
+                        "label": "Query",
+                        "format": "text"
+                    },
+                    "type": {
+                        "label": "Type",
+                        "format": "text"
+                    },
+                    "crdNumber": {
+                        "label": "CRD number",
+                        "format": "text"
+                    },
+                    "name": {
+                        "label": "Name",
+                        "format": "text"
+                    },
+                    "brokerDealerStatus": {
+                        "label": "Broker dealer status",
+                        "format": "text"
+                    },
+                    "investmentAdviserStatus": {
+                        "label": "Investment adviser status",
+                        "format": "text"
+                    },
+                    "hasDisclosures": {
+                        "label": "Has disclosures",
+                        "format": "boolean"
+                    },
+                    "branchCount": {
+                        "label": "Branch count",
+                        "format": "number"
+                    },
+                    "city": {
+                        "label": "City",
+                        "format": "text"
+                    },
+                    "state": {
+                        "label": "State",
+                        "format": "text"
+                    },
+                    "profileUrl": {
+                        "label": "Profile URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
