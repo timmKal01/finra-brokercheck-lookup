@@ -62,5 +62,5 @@ name that returns 10 matches costs the same as one that returns 1.
 
 ## Related products
 
-- [Company Buying Signal Report](https://github.com/timmKal01/company-buying-signal-report) — hiring, tech stack, and contact signal for a company domain
-- [Insider Trading Alert](https://github.com/timmKal01/insider-trading-alert) — SEC Form 4 executive buy/sell signals
+- [Company Buying Signals](https://apify.com/m_ctim/company-buying-signal-report): hiring, tech stack, and contact signal for a company domain
+- [Insider Trading Tracker](https://apify.com/m_ctim/insider-trading-alert): SEC Form 4 executive buy/sell signals
